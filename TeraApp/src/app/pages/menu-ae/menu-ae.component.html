@@ -1,0 +1,150 @@
+<div class="container-fluid">
+  <!-- Header Section -->
+  <div class="d-flex justify-content-between">
+    <h2>Menu Details</h2>
+    <button type="button" class="btn btn-light close-btn" (click)="onClose()">
+      X
+    </button>
+  </div>
+
+  <!-- Form Section -->
+  <form [formGroup]="menuForm" (ngSubmit)="submit()" class="back-form">
+    <!-- Parent Field -->
+    <div class="row mb-3 align-items-center">
+      <label for="parentId" class="col-4 col-form-label">Parent Name</label>
+      <div class="col-8">
+        <select
+          id="parentId"
+          formControlName="parentId"
+          class="form-select"
+        >
+          <option  [value]="null">Select Master</option>
+          <option *ngFor="let menu of menus" [value]="menu.id" (change)="checkData(menu.parentId)" >
+            {{ menu.menuTitle }}
+          </option>
+        </select>
+        <div
+          *ngIf="
+            menuForm.get('parentId')?.invalid &&
+            menuForm.get('parentId')?.touched
+          "
+          class="text-danger mt-1"
+        >
+          Please select a valid Parent Name.
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="row mb-3 align-items-center">
+        <label for="parent" class="col-4 col-form-label">Parent</label>
+        <div class="col-8">
+          <input id="parent" type="text" formControlName="parent" class="form-control"/>
+        </div>
+      </div> -->
+
+    <!-- Title Field -->
+    <div class="row mb-3 align-items-center">
+      <label for="title" class="col-4 col-form-label">Menu Name</label>
+      <div class="col-8">
+        <input
+          id="title"
+          type="text"
+          formControlName="menuTitle"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            menuForm.get('menuTitle')?.invalid &&
+            menuForm.get('menuTitle')?.touched
+          "
+          class="text-danger"
+        >
+          Title is required.
+        </div>
+      </div>
+    </div>
+
+    <!-- Link Field -->
+    <div class="row mb-3 align-items-center">
+      <label for="link" class="col-4 col-form-label">Link</label>
+      <div class="col-8">
+        <input
+          id="link"
+          type="text"
+          formControlName="link"
+          class="form-control"
+        />
+        <div
+          *ngIf="menuForm.get('link')?.invalid && menuForm.get('link')?.touched"
+          class="text-danger"
+        >
+          Link is required.
+        </div>
+      </div>
+    </div>
+
+    <!-- Icon Field -->
+    <div class="row mb-3 align-items-center">
+      <label for="icon" class="col-4 col-form-label">Icon</label>
+      <div class="col-8">
+        <input
+          id="icon"
+          type="text"
+          formControlName="icon"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <!-- Controller Name Field -->
+    <div class="row mb-3 align-items-center">
+      <label for="controllerName" class="col-4 col-form-label"
+        >Controller Name</label
+      >
+      <div class="col-8">
+        <input
+          id="controllerName"
+          type="text"
+          formControlName="controllerName"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <!-- Action Name Field -->
+    <div class="row mb-3 align-items-center">
+      <label for="actionName" class="col-4 col-form-label">Action Name</label>
+      <div class="col-8">
+        <input
+          id="actionName"
+          type="text"
+          formControlName="actionName"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <!-- Is Open Field -->
+    <div class="row mb-3 align-items-center">
+      <label for="isOpen" class="col-4 col-form-label">Is Open</label>
+      <div class="col-8">
+        <input
+          id="isOpen"
+          type="checkbox"
+          formControlName="isOpen"
+          class="form-check-input"
+        />
+      </div>
+    </div>
+  </form>
+
+  <!-- Action Buttons -->
+  <div class="d-flex justify-content-between mt-4">
+    <button type="submit" class="btn btn-primary" (click)="submit()">
+      Save
+    </button>
+    <button type="button" class="btn btn-secondary" (click)="resetForm()" hidden>
+      Reset
+    </button>
+  </div>
+</div>

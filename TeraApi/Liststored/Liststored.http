@@ -1,0 +1,6 @@
+@Liststored_HostAddress = http://localhost:5266
+
+GET {{Liststored_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

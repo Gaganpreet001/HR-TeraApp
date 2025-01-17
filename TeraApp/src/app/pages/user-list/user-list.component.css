@@ -1,0 +1,68 @@
+.error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .table thead th {
+    background-color: #343a40; 
+    color: white; 
+  }
+  
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; 
+    max-width: 80vw; /* Ensure it doesn't expand beyond the screen size */
+  }
+  
+  .table {
+    table-layout: auto; 
+    width: 100%; /* Take full width of the container */
+  }
+  
+  .table th, .table td {
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+  }
+  
+  .table th, .table td {
+    padding: 8px;
+    border: 1px solid #ddd; /* Light border for cells */
+  }
+  
+  .btn {
+    background: none; 
+    border: none; 
+    color: #007bff; 
+    text-decoration: underline; 
+    cursor: pointer; 
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white; 
+    text-decoration: none; 
+  }
+  
+  
+  .btn.delete {
+    color: red; 
+  }
+  
+  .btn:hover {
+    color: #0056b3; /* Darker blue on hover for edit button */
+  }
+  
+  .btn.delete:hover {
+    color: darkred;
+  }
+  
+  /* Optional: Add some responsiveness */
+  @media (max-width: 768px) {
+    .table th, .table td {
+      font-size: 0.85rem; /* Smaller font size for mobile devices */
+    }
+  }
+  
+  
+  

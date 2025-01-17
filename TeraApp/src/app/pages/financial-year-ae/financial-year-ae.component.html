@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <div class="d-flex justify-content-between">
+    <h2>Financial Year Details</h2>
+    <button type="button" class="btn btn-light close-btn" (click)="onClose()">
+      X
+    </button>
+  </div>
+
+  <form [formGroup]="financialYearForm" (ngSubmit)="submit()" class="back-form">
+    <!-- From Date Field -->
+    <div class="row mb-3 align-items-center">
+      <label for="fromDate" class="col-4 col-form-label">From Date</label>
+      <div class="col-8">
+        <input
+          id="fromDate"
+          type="date"
+          formControlName="fromDate"
+          class="form-control"
+        />
+        <div
+          *ngIf="financialYearForm.get('fromDate')?.invalid && financialYearForm.get('fromDate')?.touched"
+          class="text-danger"
+        >
+          From Date is required.
+        </div>
+      </div>
+    </div>
+
+    <!-- To Date Field -->
+    <div class="row mb-3 align-items-center">
+      <label for="toDate" class="col-4 col-form-label">To Date</label>
+      <div class="col-8">
+        <input
+          id="toDate"
+          type="date"
+          formControlName="toDate"
+          class="form-control"
+        />
+        <div
+          *ngIf="financialYearForm.get('toDate')?.invalid && financialYearForm.get('toDate')?.touched"
+          class="text-danger"
+        >
+          To Date is required.
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="d-flex justify-content-between mt-4">
+    <button type="submit" class="btn btn-primary" (click)="submit()">
+      Save
+    </button>
+    <button type="button" class="btn btn-secondary" (click)="resetForm()">
+      Reset
+    </button>
+  </div>
+</div>

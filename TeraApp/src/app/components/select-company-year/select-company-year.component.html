@@ -1,0 +1,48 @@
+<div class="selection-container d-flex align-items-center justify-content-center">
+    <div class="card selection-card">
+      <div class="card-body">
+        <h3 class="selection-heading text-center mb-4">Welcome User</h3>
+        <h6 class="text-center mb-4">Select Your Company and Session</h6>
+  
+        <form [formGroup]="selectForm" (ngSubmit)="submitSelection()" class="selection-form">
+          <!-- Company Dropdown -->
+          <div class="form-group mb-3">
+            <select id="company" formControlName="company" class="form-select">
+              <option value="" disabled selected>Select Company</option>
+              <option *ngFor="let company of companies" [value]="company">
+                {{ company.companyName }}
+              </option>
+            </select>
+            <div
+              *ngIf="selectForm.get('company')?.invalid && selectForm.get('company')?.touched"
+              class="text-danger mt-1"
+            >
+              Company is required.
+            </div>
+          </div>
+  
+          <!-- Financial Year Dropdown -->
+          <div class="form-group mb-3">
+            <select id="financialYear" formControlName="financialYear" class="form-select">
+              <option value="" disabled selected>Select Financial Year</option>
+              <option *ngFor="let year of financialYears" [value]="year">
+                {{ year.fromDate | date }} - {{ year.toDate | date }}
+              </option>
+            </select>
+            <div
+              *ngIf="selectForm.get('financialYear')?.invalid && selectForm.get('financialYear')?.touched"
+              class="text-danger mt-1"
+            >
+              Financial Year is required.
+            </div>
+          </div>
+  
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary mb-3 w-100">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

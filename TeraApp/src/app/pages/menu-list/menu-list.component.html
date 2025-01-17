@@ -1,0 +1,75 @@
+<div class="container-fluid">
+
+    <div *ngIf="error" class="alert alert-danger mt-3 error-message">
+      {{ error }}
+    </div>
+  
+    <div class="mb-3 text-end">
+      <button class="btn btn-primary" (click)="addMenu()">
+        <i class="bi bi-plus-square"></i> Add New Menu
+      </button>
+    </div>
+
+    <!-- Menus table -->
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Parent Id</th>
+          <th>Menu Name</th>
+          <th>Path</th>
+          <th>Entered By</th>
+          <th>Entered On</th>
+          <th>Updated By</th>
+          <th>Updated On</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="
+            let menu of menus | paginate : { itemsPerPage: pageSize, currentPage: currentPage, totalItems: totalItems };
+            let i = index
+          "
+        >
+          <td>{{ i + 1 }}</td>
+          <td>{{ menu.parentId}}</td>
+          <td>{{ menu.menuTitle }}</td>
+          <td>{{ menu.link  }}</td>
+          <td>{{ menu.enteredBy }}</td>
+          <td>{{ menu.enteredOn | date }}</td>
+          <td>{{ menu.updatedBy }}</td>
+          <td>{{ menu.updatedOn | date }}</td>
+          
+          <td class="text-center">
+            <button class="btn btn-sm btn-warning me-1" (click)="editMenu(menu.id)">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button class="btn btn-sm delete" (click)="deleteMenu(menu.id)">
+              <i class="bi bi-trash-fill"></i>
+            </button>
+          </td>
+        </tr>
+  
+        <!-- If there are no menus, show this message -->
+        <tr *ngIf="menus.length === 0">
+          <td colspan="10" class="text-center">No menus found.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>
+  
+    <!-- Modal for MenuAEComponent -->
+    <ng-template #menuModal let-modal>
+      <div class="modal-header">
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-menu-ae></app-menu-ae>
+      </div>
+    </ng-template>
+  </div>
+  

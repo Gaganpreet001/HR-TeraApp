@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <div class="row align-items-center">
+    <div class="col">
+      <h2 *ngIf="itemId; else addItemTemplate">Edit Item</h2>
+      <ng-template #addItemTemplate>
+        <h2>Add Item</h2>
+      </ng-template>
+    </div>
+    <div class="col text-end">
+      <button type="button" class="btn btn-light close-btn" (click)="onClose()">X</button>
+    </div>
+  </div>
+  
+  <form [formGroup]="itemForm" (ngSubmit)="submit()" class="back-form">
+    <div class="mb-3">
+      <label for="code" class="form-label">Code</label>
+      <input id="code" formControlName="code" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input id="name" formControlName="name" class="form-control" />  
+    </div>
+    <div class="mb-3">
+      <label for="unitId" class="form-label">Select Unit</label>
+      <select class="form-select" id="unitId" formControlName="unitId">
+        <option [value]="0" disabled>Select Unit</option>
+        <option *ngFor="let unit of units" [value]="unit.id">{{ unit.name }}</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="groupId" class="form-label">Select Group</label>
+      <select class="form-select" id="groupId" formControlName="groupId">
+        <option [value]="0" disabled>Select Group</option>
+        <option *ngFor="let group of groups" [value]="group.id">{{ group.name }}</option>
+      </select>
+    </div>
+  </form>
+  <div class="d-flex justify-content-between mt-4">
+    <button type="submit" class="btn btn-primary" (click)="submit()">Save</button>
+    <button type="button" class="btn btn-secondary" (click)="resetForm()">Reset</button>
+  </div>
+</div>

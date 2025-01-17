@@ -1,0 +1,341 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Development\\JC\\Liststored\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\service\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\service\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\models\\selectedcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\models\\selectedcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\models\\usermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\models\\usermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\controllers\\selectedcompanycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\controllers\\selectedcompanycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\controllers\\rolepermissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\controllers\\rolepermissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\service\\rolepermissionsservice\\rolepermissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\service\\rolepermissionsservice\\rolepermissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\models\\rolepermissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\models\\rolepermissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\service\\rolepermissionsservice\\irolepermissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\service\\rolepermissionsservice\\irolepermissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\service\\selectedcompanyservice\\selectedcompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\service\\selectedcompanyservice\\selectedcompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\service\\selectedcompanyservice\\iselectedcompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\service\\selectedcompanyservice\\iselectedcompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\service\\companyservice\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\service\\companyservice\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\service\\userservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\service\\userservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\models\\menumaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\models\\menumaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\service\\menuservice\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\service\\menuservice\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|d:\\development\\jc\\liststored\\liststored\\service\\menuservice\\imenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E9BAF9-D4AB-46C8-ABFD-F3421A7E68E5}|Liststored\\Liststored.csproj|solutionrelative:liststored\\service\\menuservice\\imenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RolePermissions.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Models\\RolePermissions.cs",
+              "RelativeDocumentMoniker": "Liststored\\Models\\RolePermissions.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Models\\RolePermissions.cs",
+              "RelativeToolTip": "Liststored\\Models\\RolePermissions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T06:41:59.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SelectedCompanyController.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\SelectedCompanyController.cs",
+              "RelativeDocumentMoniker": "Liststored\\Controllers\\SelectedCompanyController.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\SelectedCompanyController.cs",
+              "RelativeToolTip": "Liststored\\Controllers\\SelectedCompanyController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T06:43:00.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SelectedCompanyService.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\SelectedCompanyService\\SelectedCompanyService.cs",
+              "RelativeDocumentMoniker": "Liststored\\Service\\SelectedCompanyService\\SelectedCompanyService.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\SelectedCompanyService\\SelectedCompanyService.cs",
+              "RelativeToolTip": "Liststored\\Service\\SelectedCompanyService\\SelectedCompanyService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAuwB0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T06:21:53.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISelectedCompanyService.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\SelectedCompanyService\\ISelectedCompanyService.cs",
+              "RelativeDocumentMoniker": "Liststored\\Service\\SelectedCompanyService\\ISelectedCompanyService.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\SelectedCompanyService\\ISelectedCompanyService.cs",
+              "RelativeToolTip": "Liststored\\Service\\SelectedCompanyService\\ISelectedCompanyService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T06:21:27.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Liststored\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Liststored\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T12:37:34.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\UserService\\UserService.cs",
+              "RelativeDocumentMoniker": "Liststored\\Service\\UserService\\UserService.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\UserService\\UserService.cs",
+              "RelativeToolTip": "Liststored\\Service\\UserService\\UserService.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAiwIEAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T05:01:36.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\UserService\\IUserService.cs",
+              "RelativeDocumentMoniker": "Liststored\\Service\\UserService\\IUserService.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\UserService\\IUserService.cs",
+              "RelativeToolTip": "Liststored\\Service\\UserService\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T05:00:51.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SelectedCompany.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Models\\SelectedCompany.cs",
+              "RelativeDocumentMoniker": "Liststored\\Models\\SelectedCompany.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Models\\SelectedCompany.cs",
+              "RelativeToolTip": "Liststored\\Models\\SelectedCompany.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T04:58:33.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserMaster.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Models\\UserMaster.cs",
+              "RelativeDocumentMoniker": "Liststored\\Models\\UserMaster.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Models\\UserMaster.cs",
+              "RelativeToolTip": "Liststored\\Models\\UserMaster.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T04:55:02.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RolePermissionsController.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\RolePermissionsController.cs",
+              "RelativeDocumentMoniker": "Liststored\\Controllers\\RolePermissionsController.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\RolePermissionsController.cs",
+              "RelativeToolTip": "Liststored\\Controllers\\RolePermissionsController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAQwEQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:30:41.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RolePermissionsService.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\RolePermissionsService\\RolePermissionsService.cs",
+              "RelativeDocumentMoniker": "Liststored\\Service\\RolePermissionsService\\RolePermissionsService.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\RolePermissionsService\\RolePermissionsService.cs",
+              "RelativeToolTip": "Liststored\\Service\\RolePermissionsService\\RolePermissionsService.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAA0wE0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:29:48.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRolePermissionsService.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\RolePermissionsService\\IRolePermissionsService.cs",
+              "RelativeDocumentMoniker": "Liststored\\Service\\RolePermissionsService\\IRolePermissionsService.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\RolePermissionsService\\IRolePermissionsService.cs",
+              "RelativeToolTip": "Liststored\\Service\\RolePermissionsService\\IRolePermissionsService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:29:22.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\CompanyService\\CompanyService.cs",
+              "RelativeDocumentMoniker": "Liststored\\Service\\CompanyService\\CompanyService.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\CompanyService\\CompanyService.cs",
+              "RelativeToolTip": "Liststored\\Service\\CompanyService\\CompanyService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T07:24:09.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Program.cs",
+              "RelativeDocumentMoniker": "Liststored\\Program.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Program.cs",
+              "RelativeToolTip": "Liststored\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T07:10:35.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "Liststored\\Controllers\\CompanyController.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "Liststored\\Controllers\\CompanyController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA0wBQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T07:08:27.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "Liststored\\Controllers\\MenuController.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "Liststored\\Controllers\\MenuController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAQwEkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T07:00:39.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\MenuService\\MenuService.cs",
+              "RelativeDocumentMoniker": "Liststored\\Service\\MenuService\\MenuService.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\MenuService\\MenuService.cs",
+              "RelativeToolTip": "Liststored\\Service\\MenuService\\MenuService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T06:07:34.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IMenuService.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\MenuService\\IMenuService.cs",
+              "RelativeDocumentMoniker": "Liststored\\Service\\MenuService\\IMenuService.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Service\\MenuService\\IMenuService.cs",
+              "RelativeToolTip": "Liststored\\Service\\MenuService\\IMenuService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T06:07:02.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MenuMaster.cs",
+              "DocumentMoniker": "D:\\Development\\JC\\Liststored\\Liststored\\Models\\MenuMaster.cs",
+              "RelativeDocumentMoniker": "Liststored\\Models\\MenuMaster.cs",
+              "ToolTip": "D:\\Development\\JC\\Liststored\\Liststored\\Models\\MenuMaster.cs",
+              "RelativeToolTip": "Liststored\\Models\\MenuMaster.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T05:38:16.668Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

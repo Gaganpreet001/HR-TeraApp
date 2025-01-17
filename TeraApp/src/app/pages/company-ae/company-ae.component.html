@@ -1,0 +1,162 @@
+<div class="container-fluid">
+  <div class="d-flex justify-content-between">
+    <h2>Company Details</h2>
+    <!-- Title for the component -->
+    <button type="button" class="btn btn-light close-btn" (click)="onClose()">
+      X
+    </button>
+  </div>
+
+  <form [formGroup]="companyForm" (ngSubmit)="submit()" class="back-form">
+    <!-- Editable Fields -->
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td><strong>Company Name</strong></td>
+            <td>
+              <input
+                id="companyName"
+                type="text"
+                formControlName="companyName"
+                class="form-control"
+              />
+              <div
+                *ngIf="
+                  companyForm.get('companyName')?.invalid &&
+                  companyForm.get('companyName')?.touched
+                "
+                class="text-danger"
+              >
+                Company Name is required.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Legal Name</strong></td>
+            <td>
+              <input
+                id="legalName"
+                type="text"
+                formControlName="legalName"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Short Name</strong></td>
+            <td>
+              <input
+                id="shortName"
+                type="text"
+                formControlName="shortName"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Address</strong></td>
+            <td>
+              <textarea
+                id="address"
+                formControlName="address"
+                class="form-control"
+              ></textarea>
+              <div
+                *ngIf="
+                  companyForm.get('address')?.invalid &&
+                  companyForm.get('address')?.touched
+                "
+                class="text-danger"
+              >
+                Address is required.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>City</strong></td>
+            <td>
+              <input
+                id="city"
+                type="text"
+                formControlName="city"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Phone</strong></td>
+            <td>
+              <input
+                id="phone"
+                type="text"
+                formControlName="phone"
+                class="form-control"
+              />
+              <div
+                *ngIf="
+                  companyForm.get('phone')?.invalid &&
+                  companyForm.get('phone')?.touched
+                "
+                class="text-danger"
+              >
+                Please enter a valid 10-digit phone number.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Email</strong></td>
+            <td>
+              <input
+                id="emailId"
+                type="email"
+                formControlName="emailId"
+                class="form-control"
+              />
+              <div
+                *ngIf="
+                  companyForm.get('emailId')?.invalid &&
+                  companyForm.get('emailId')?.touched
+                "
+                class="text-danger"
+              >
+                Please enter a valid email address.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>GSTIN</strong></td>
+            <td>
+              <input
+                id="gstin"
+                type="text"
+                formControlName="gstin"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><strong>PAN</strong></td>
+            <td>
+              <input
+                id="pan"
+                type="text"
+                formControlName="pan"
+                class="form-control"
+              />
+            </td>
+          </tr>  
+        </tbody>
+      </table>
+    </div>
+  </form>
+
+  <div class="d-flex justify-content-between mt-4">
+    <button type="submit" class="btn btn-primary" (click)="submit()">
+      Save
+    </button>
+    <button type="button" class="btn btn-secondary" (click)="resetForm()">
+      Reset
+    </button>
+  </div>
+</div>

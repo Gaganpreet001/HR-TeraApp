@@ -1,0 +1,72 @@
+<nav id="sidebar" [ngClass]="{ 'd-none': !isSidebarVisible }">
+  <div class="sidebar-header">
+    <h3>LOGO</h3>
+  </div>
+  <ul class="list-unstyled components">
+    <!-- Iterate through grouped navigation items -->
+    <ng-container *ngFor="let group of groupedNavItems">
+      <li>
+        <!-- Top-level group -->
+        <a
+          *ngIf="!group.link"
+          href="javascript:void(0);"
+          (click)="toggleSubMenu(group)"
+          [attr.aria-expanded]="group.isOpen"
+          class="dropdown-toggle"
+        >
+          {{ group.parent }}
+        </a>
+        <!-- Render direct link if available -->
+        <a
+          *ngIf="group.link"
+          [routerLink]="group.link"
+          routerLinkActive="active"
+        >
+          {{ group.parent }}
+        </a>
+
+        <!-- Render group items if available -->
+        <ul
+          *ngIf="group.items.length > 0"
+          class="list-unstyled"
+          [ngClass]="{ 'collapse show': group.isOpen, 'collapse': !group.isOpen }"
+        >
+          <ng-container *ngFor="let item of group.items">
+            <li>
+              <!-- Item with nested sub-items -->
+              <a
+                *ngIf="item.items && item.items.length > 0"
+                href="javascript:void(0);"
+                (click)="toggleSubMenu(item)"
+                [attr.aria-expanded]="item.isOpen"
+                class="dropdown-toggle"
+              >
+                {{ item.title }}
+              </a>
+              <!-- Render nested sub-items -->
+              <ul
+                *ngIf="item.items && item.items.length > 0"
+                class="list-unstyled"
+                [ngClass]="{ 'collapse show': item.isOpen, 'collapse': !item.isOpen }"
+              >
+                <li *ngFor="let subItem of item.items" class="subItem">
+                  <a [routerLink]="subItem.link" routerLinkActive="active">
+                    <span style="margin-left: 20px;"></span>{{ subItem.title }}
+                  </a>
+                </li>
+              </ul>
+              <!-- Render as direct link if no sub-items -->
+              <a
+                *ngIf="!item.items || !item.items.length"
+                [routerLink]="item.link"
+                routerLinkActive="active"
+              >
+                {{ item.title }}
+              </a>
+            </li>
+          </ng-container>
+        </ul>
+      </li>
+    </ng-container>
+  </ul>
+</nav>

@@ -1,0 +1,65 @@
+<div class="container-fluid">
+  <div class="d-flex justify-content-between">
+    <h2>Role Details</h2>
+    <!-- Title for the component -->
+    <button type="button" class="btn btn-light close-btn" (click)="onClose()">
+      X
+    </button>
+  </div>
+
+  <!-- Form Section -->
+  <form [formGroup]="roleForm" (ngSubmit)="submit()" class="back-form">
+    <div class="row mb-3 align-items-center">
+      <!-- Role Name Field -->
+      <label for="roleName" class="col-4 col-form-label">Role Name</label>
+      <div class="col-8">
+        <input
+          id="roleName"
+          type="text"
+          formControlName="roleName"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            roleForm.get('roleName')?.invalid &&
+            roleForm.get('roleName')?.touched
+          "
+          class="text-danger"
+        >
+          Role Name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-3 align-items-center">
+      <!-- Description Field -->
+      <label for="description" class="col-4 col-form-label">Description</label>
+      <div class="col-8">
+        <textarea
+          id="description"
+          formControlName="description"
+          class="form-control"
+        ></textarea>
+        <div
+          *ngIf="
+            roleForm.get('description')?.invalid &&
+            roleForm.get('description')?.touched
+          "
+          class="text-danger"
+        >
+          Description is required.
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="d-flex justify-content-between mt-4">
+    <button type="submit" class="btn btn-primary" (click)="submit()">
+      Save
+    </button>
+    <button type="button" class="btn btn-secondary" (click)="resetForm()">
+      Reset
+    </button>
+  </div>
+</div>
+

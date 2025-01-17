@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  
+  <div *ngIf="error" class="alert alert-danger mt-3 error-message">
+    {{ error }}
+  </div>
+    <!-- Align Add New button to the right -->
+    <div class="mb-3 text-end">
+      <button class="btn btn-primary" (click)="addFinancialYear()"><i class="bi bi-plus-square"></i> Add New Financial Year</button>
+    </div>
+  
+    <!-- Financial Year table -->
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Entered By</th>
+          <th>Entered On</th>
+          <th>Updated By</th>
+          <th>Updated On</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let fy of financialYears | paginate : { itemsPerPage: pageSize, currentPage: currentPage, totalItems: totalItems } let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ fy.fromDate | date }}</td>
+          <td>{{ fy.toDate | date }}</td>
+          <td>{{ fy.enteredBy }}</td>
+          <td>{{ fy.enteredOn | date }}</td>
+          <td>{{ fy.updatedBy }}</td>
+          <td>{{ fy.updatedOn | date }}</td>
+          <td class="text-center">
+            <button class="btn btn-sm btn-warning me-1" (click)="editFinancialYear(fy.id)"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-sm delete" (click)="deleteFinancialYear(fy.id)"><i class="bi bi-trash-fill"></i></button>
+          </td>
+        </tr>
+  
+        <!-- If there are no financial years, show this message -->
+        <tr *ngIf="financialYears.length === 0">
+          <td colspan="9" class="text-center">No financial years found.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Pagination controls -->
+    <pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>
+  
+    <!-- Modal for FinancialYearAEComponent -->
+    <ng-template #financialYearModal let-modal>
+      <div class="modal-header">
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-financial-year-ae></app-financial-year-ae>
+      </div>
+    </ng-template>
+  </div>
+  

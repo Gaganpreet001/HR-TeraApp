@@ -1,0 +1,27 @@
+nav {
+   font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 0 5px;
+  }
+  
+  nav a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  nav span {
+    padding: 0 5px;
+    color: #999;
+  }
+  
+  nav .last {
+    font-weight: bold;
+    color: #555;
+  }  

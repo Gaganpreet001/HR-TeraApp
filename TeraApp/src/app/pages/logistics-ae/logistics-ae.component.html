@@ -1,0 +1,126 @@
+<div class="container-fluid" > <!-- Increase width -->
+  <div class="d-flex justify-content-between">
+      <h2>Logistics Information</h2> <!-- Remove margin to keep it in a single line -->
+      <button type="button" class="btn btn-light close-btn" (click)="onClose()">X</button>
+  </div>
+  
+  <form [formGroup]="logisticsForm" (ngSubmit)="submit()" class="back-form">
+    <!-- Readonly Fields in Tabular Format -->
+    <div class="table-responsive">
+      <table class="mb-3">
+        <tbody>
+          <tr>
+            <td><strong>Order No: </strong></td>
+            <td>{{ logisticsForm.value.ordeR_No  }}</td>
+          </tr>
+          <tr>
+            <td><strong>PA No: </strong></td>
+            <td>{{ logisticsForm.value.pA_NO }}</td>
+          </tr>
+          <tr>
+            <td><strong>Invoice No: </strong></td>
+            <td>{{ logisticsForm.value.invoiceNo }}</td>
+          </tr>
+          <tr>
+            <td><strong>Customer: </strong></td>
+            <td>{{ logisticsForm.value.customer  }}</td>
+          </tr>
+          <tr>
+            <td><strong>Invoice Date: </strong></td>
+            <td>{{ logisticsForm.value.invoiceDate }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Editable Fields Table -->
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td><strong>Rail Out</strong></td>
+            <td>
+              <input id="railOut" type="date" formControlName="railOut" class="form-control" />
+              <div *ngIf="logisticsForm.get('railOut')?.hasError('dateBeforeOrderDate')" class="text-danger">
+                Rail Out date cannot be before the order date.
+              </div>
+            </td>
+           
+          </tr>
+          <tr>
+            <td><strong>Target SOB</strong></td>
+            <td>
+              <input id="targetSOB" type="date" formControlName="targetSOB" class="form-control" />
+              <div *ngIf="logisticsForm.get('targetSOB')?.hasError('dateBeforeOrderDate')" class="text-danger">
+                Target SOB date cannot be before the order date.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Actual SOB</strong></td>
+            <td>
+              <input id="actualSOB" type="date" formControlName="actualSOB" class="form-control" />
+              <div *ngIf="logisticsForm.get('actualSOB')?.hasError('dateBeforeOrderDate')" class="text-danger">
+                Actual SOB date cannot be before the order date.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Actual Vessel Details</strong></td>
+            <td>
+              <input id="actualVesselDetails" formControlName="actualVesselDetails" class="form-control" />           
+            </td>
+          </tr>
+          <tr>
+            <td><strong>COC</strong></td>
+            <td>
+              <input id="coc" type="text" formControlName="coc" class="form-control" />
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Target ETA</strong></td>
+            <td>
+              <input id="targetETA" type="date" formControlName="targetETA" class="form-control" />
+              <div *ngIf="logisticsForm.get('targetETA')?.hasError('dateBeforeOrderDate')" class="text-danger">
+                Target ETA date cannot be before the order date.
+              </div>
+            </td>  
+          </tr>
+          <tr>
+            <td><strong>Actual ETA</strong></td>
+            <td>
+              <input id="actualETA" type="date" formControlName="actualETA" class="form-control" />
+              <div *ngIf="logisticsForm.get('actualETA')?.hasError('dateBeforeOrderDate')" class="text-danger">
+                Actual ETA date cannot be before the order date.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Cargo Unloading Date</strong></td>
+            <td>
+              <input id="cargoUnloadingDate" type="date" formControlName="cargoUnloadingDate" class="form-control" />
+              <div *ngIf="logisticsForm.get('cargoUnloadingDate')?.hasError('dateBeforeOrderDate')" class="text-danger">
+                Cargo Unloading date cannot be before the order date.
+              </div>
+            </td>
+          </tr>
+          <!-- <tr>
+            <td><strong>Remarks</strong></td>
+            <td><textarea id="remarks" formControlName="remarks" class="form-control"></textarea></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-12">
+        <label for="remarks" class="form-label"><strong>Remarks</strong></label>
+        <textarea id="remarks" formControlName="remarks" class="form-control"></textarea>
+      </div>
+    </div>
+  </form>
+
+  <div class="d-flex justify-content-between mt-4">
+    <button type="submit" class="btn btn-primary" (click)="submit()">Save</button>
+    <button type="button" class="btn btn-secondary" (click)="resetForm()">Reset</button>
+  </div>
+</div>

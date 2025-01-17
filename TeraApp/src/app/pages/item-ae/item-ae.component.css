@@ -1,0 +1,54 @@
+.container-fluid {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 20px; /* Added padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2 {
+    color: #343a40; /* Darker color for headings */
+    margin-bottom: 20px; /* Space below headings */
+  }
+  
+  .close-btn {
+    background-color: transparent; /* Transparent background for the close button */
+    border: none; /* Remove border */
+    color: #dc3545; /* Red color for the close button */
+    font-size: 20px; /* Larger font for visibility */
+  }
+  
+  .close-btn:hover {
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: underline; /* Underline text on hover */
+  }
+  
+  .back-form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .form-label {
+    font-weight: 600; /* Bold labels */
+  }
+  
+  .text-danger {
+    font-size: 0.875rem; /* Slightly smaller font for error messages */
+    margin-top: 5px; /* Space above error messages */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove border */
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+    border: none; /* Remove border */
+  }
+  
+  .btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.9; /* Slightly transparent on hover */
+  }
+  

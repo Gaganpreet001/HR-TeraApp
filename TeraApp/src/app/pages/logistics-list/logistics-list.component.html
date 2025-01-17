@@ -1,0 +1,171 @@
+<div class="container-fluid mt-4">
+  <form
+    [formGroup]="dateForm"
+    (ngSubmit)="loadLogisticsDataPages()"
+    class="row g-3 align-items-center"
+  >
+    <div class="col-md-5 d-flex">
+      <label for="fromDate" class="form-label me-2" style="width: 150px"
+        >From Date</label
+      >
+      <input
+        type="date"
+        id="fromDate"
+        formControlName="fromDate"
+        placeholder=""
+        class="form-control"
+      />
+    </div>
+    <div class="col-md-5 d-flex">
+      <label for="toDate" class="form-label me-2" style="width: 150px"
+        >To Date</label
+      >
+      <input
+        type="date"
+        id="toDate"
+        formControlName="toDate"
+        placeholder=""
+        inputmode="none"
+        class="form-control"
+      />
+    </div>
+    <div class="col-md-2 d-flex justify-content-end">
+      <button type="submit" class="btn btn-primary">Load Data</button>
+    </div>
+  </form>
+
+  <div
+    *ngIf="dateForm.invalid && dateForm.touched"
+    class="alert alert-danger mt-3 error-message"
+  >
+    Please select both From Date and To Date.
+  </div>
+  <div *ngIf="error" class="alert alert-danger mt-3 error-message">
+    {{ error }}
+  </div>
+  <div
+    [ngClass]="{
+      'sidebar-open': isSidebarOpen,
+      'sidebar-closed': !isSidebarOpen
+    }"
+  >
+    <div class="mt-4 table-container">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Order No</th>
+            <th>Order Date</th>
+            <!-- PI Date is Order Date -->
+            <th>Customer</th>
+            <th>Agent</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Value</th>
+            <th>PA No</th>
+            <th>PA Date</th>
+            <th>LC No</th>
+            <th>Advance Value</th>
+            <th>LDS</th>
+            <th>Invoice No</th>
+            <th>Invoice Date</th>
+            <th>Invoice Qty</th>
+            <th>Invoice Value</th>
+            <th>Negotiation Value</th>
+            <th>Shipping Bill No</th>
+            <th>Shipping Bill Date</th>
+            <th>Custom Seal No</th>
+            <th>Line Seal No</th>
+            <th>CHA</th>
+            <th>Forwarder</th>
+            <th>Shipping Line</th>
+            <th>Freight</th>
+            <th>Loading Port</th>
+            <th>Destination Port</th>
+            <th>COC</th>
+            <th>Rail Out</th>
+            <th>Target SOB</th>
+            <th>Actual SOB</th>
+            <th>Actual Vessel Details</th>
+            <th>Target ETA</th>
+            <th>Actual ETA</th>
+            <th>Cargo Unloading Date</th>
+            <th>Remark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="
+              let item of logisticsData | paginate : { itemsPerPage: pageSize, currentPage: currentPage,totalItems: totalItems}">
+            <td>
+              <button
+                class="btn btn-sm"
+                (click)="editLogisticData(item.pino, item.piDate)"
+              >
+                <i class="bi bi-pen"></i>
+              </button>
+            </td>
+            <td>{{ item.pino }}</td>
+            <td>{{ item.piDate | date }}</td>
+            <td>{{ item.customer }}</td>
+            <td>{{ item.agent }}</td>
+            <td>{{ item.item }}</td>
+            <td>{{ item.totalOrderQty }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.value }}</td>
+            <td>{{ item.paNo }}</td>
+            <td>{{ item.paDate | date }}</td>
+            <td>{{ item.lcNo }}</td>
+            <td>{{ item.advanceValue }}</td>
+            <td>{{ item.lds }}</td>
+            <td>{{ item.invoiceNo }}</td>
+            <td>{{ item.invoiceDate | date }}</td>
+            <td>{{ item.invoiceQnty }}</td>
+            <td>{{ item.invoiceValue }}</td>
+            <td>{{ item.negotiationValue }}</td>
+            <td>{{ item.shippingBillNo }}</td>
+            <td>{{ item.shippingBillDate | date }}</td>
+            <td>{{ item.customSealNo }}</td>
+            <td>{{ item.lineSealNo }}</td>
+            <td>{{ item.cha }}</td>
+            <td>{{ item.forwarder }}</td>
+            <td>{{ item.shippingLine }}</td>
+            <td>{{ item.freight }}</td>
+            <td>{{ item.loadingPort }}</td>
+            <td>{{ item.destinationPort }}</td>
+            <td>{{ item.coc }}</td>
+            <td>{{ item.railOut | date }}</td>
+            <td>{{ item.targetSOB | date }}</td>
+            <td>{{ item.actualSOB | date }}</td>
+            <td>{{ item.actualVesselDetails }}</td>
+            <td>{{ item.targetETA | date }}</td>
+            <td>{{ item.actualETA | date }}</td>
+            <td>{{ item.cargoUnloadingDate | date }}</td>
+            <td>{{ item.remarks }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <pagination-controls
+        (pageChange)="onPageChange($event)"
+      ></pagination-controls>
+    </div>
+  </div>
+
+  <!-- Modal for LogisticAEComponent -->
+  <ng-template #logisticModal let-modal>
+    <div class="modal-header">
+      <button
+        type="button"
+        class="close"
+        aria-label="Close"
+        (click)="modal.dismiss('Cross click')"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-logistics-ae></app-logistics-ae>
+    </div>
+  </ng-template>
+</div>

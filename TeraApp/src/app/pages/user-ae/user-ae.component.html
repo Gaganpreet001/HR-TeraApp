@@ -1,0 +1,335 @@
+<div class="container-fluid">
+  <!-- Form Section -->
+  <form [formGroup]="userForm" (ngSubmit)="submit()" class="back-form">
+    <div class="row">
+      <!-- For User Details -->
+      <div class="col-md-6">
+        <!-- Card Started -->
+        <div class="card p-2">
+          <div class="card-header px-2">
+            <h4>User Details</h4>
+          </div>
+          <div class="card-body">
+            <div class="row mb-3 align-items-center">
+              <label for="firstName" class="col-4 col-form-label"
+                >First Name</label
+              >
+              <div class="col-8">
+                <input
+                  id="firstName"
+                  type="text"
+                  formControlName="firstName"
+                  class="form-control"
+                />
+                <div
+                  *ngIf="
+                    userForm.get('firstName')?.invalid &&
+                    userForm.get('firstName')?.touched
+                  "
+                  class="text-danger"
+                >
+                  First Name is required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Last Name Field -->
+            <div class="row mb-3 align-items-center">
+              <label for="lastName" class="col-4 col-form-label"
+                >Last Name</label
+              >
+              <div class="col-8">
+                <input
+                  id="lastName"
+                  type="text"
+                  formControlName="lastName"
+                  class="form-control"
+                />
+                <div
+                  *ngIf="
+                    userForm.get('lastName')?.invalid &&
+                    userForm.get('lastName')?.touched
+                  "
+                  class="text-danger"
+                >
+                  Last Name is required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Username Field -->
+            <div class="row mb-3 align-items-center">
+              <label for="userName" class="col-4 col-form-label"
+                >Username</label
+              >
+              <div class="col-8">
+                <input
+                  id="userName"
+                  type="text"
+                  formControlName="userName"
+                  class="form-control"
+                />
+                <div
+                  *ngIf="
+                    userForm.get('userName')?.invalid &&
+                    userForm.get('userName')?.touched
+                  "
+                  class="text-danger"
+                >
+                  Username is required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Password Field -->
+            <div class="row mb-3 align-items-center">
+              <label for="password" class="col-4 col-form-label"
+                >Password</label
+              >
+              <div class="col-8">
+                <input
+                  id="password"
+                  type="password"
+                  formControlName="password"
+                  class="form-control"
+                />
+                <div
+                  *ngIf="
+                    userForm.get('password')?.invalid &&
+                    userForm.get('password')?.touched
+                  "
+                  class="text-danger"
+                >
+                  Password is required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Password Field -->
+            <div class="row mb-3 align-items-center">
+              <label for="emailPassword" class="col-4 col-form-label"
+                >Email Password</label
+              >
+              <div class="col-8">
+                <input
+                  id="emailPassword"
+                  type="password"
+                  formControlName="emailPassword"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <!-- Email Field -->
+            <div class="row mb-3 align-items-center">
+              <label for="email" class="col-4 col-form-label">Email</label>
+              <div class="col-8">
+                <input
+                  id="email"
+                  type="email"
+                  formControlName="email"
+                  class="form-control"
+                />
+                <div
+                  *ngIf="
+                    userForm.get('email')?.invalid &&
+                    userForm.get('email')?.touched
+                  "
+                  class="text-danger"
+                >
+                  Valid Email is required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Field -->
+            <div class="row mb-3 align-items-center">
+              <label for="photo" class="col-4 col-form-label">Photo</label>
+              <div class="col-8">
+                <input
+                  id="photo"
+                  type="file"
+                  (change)="onPhotoUpload($event)"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <!-- Role Selection -->
+            <div class="row mb-3 align-items-center">
+              <label for="roleId" class="col-4 col-form-label">Role</label>
+              <div class="col-8">
+                <select
+                  id="roleId"
+                  formControlName="roleId"
+                  class="form-select"
+                >
+                  <option *ngFor="let role of roles" [value]="role.id">
+                    {{ role.roleName }}
+                  </option>
+                </select>
+                <div
+                  *ngIf="
+                    userForm.get('roleId')?.invalid &&
+                    userForm.get('roleId')?.touched
+                  "
+                  class="text-danger"
+                >
+                  Role is required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Number Field -->
+            <div class="row mb-3 align-items-center">
+              <label for="mobileNo" class="col-4 col-form-label"
+                >Mobile Number</label
+              >
+              <div class="col-8">
+                <input
+                  id="mobileNo"
+                  type="text"
+                  formControlName="mobileNo"
+                  class="form-control"
+                />
+                <div
+                  *ngIf="
+                    userForm.get('mobileNo')?.invalid &&
+                    userForm.get('mobileNo')?.touched
+                  "
+                  class="text-danger"
+                >
+                  Mobile Number is required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons Section -->
+            <div class="d-flex mt-4">
+              <button type="submit" class="btn btn-primary">
+                {{ isEditForm ? "Update" : "Save" }}
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                (click)="cancel()"
+              >
+                Cancel
+              </button>
+            </div>
+            <!-- Buttons Ended -->
+          </div>
+        </div>
+        <!-- Card Ended -->
+      </div>
+      <!-- User Details Ended -->
+
+      <!-- Selected Companies Section -->
+      <div class="col-md-6">
+        <!-- Card Started -->
+        <div class="card p-2">
+          <div class="card-header px-2">
+            <h4>Select Company</h4>
+          </div>
+          <div class="card-body">
+            <div class="form-group mt-3">
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <button
+                  type="button"
+                  class="btn btn-outline-primary mt-2"
+                  (click)="
+                    addCompany({
+                      id: 0,
+                      userId: editingUserId || 0,
+                      companyId: null
+                    })
+                  "
+                >
+                  Add Company
+                </button>
+              </div>
+              <table class="table table-bordered bg-white">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Company</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody formArrayName="selectedCompanies">
+                  <tr
+                    *ngFor="
+                      let company of selectedCompanies.controls;
+                      let i = index
+                    "
+                    [formGroupName]="i"
+                  >
+                    <td>{{ i + 1 }}</td>
+                    <td>
+                      <input
+                        class="form-control text-muted"
+                        type="number"
+                        formControlName="id"
+                        readonly
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control text-muted"
+                        type="number"
+                        formControlName="userId"
+                        readonly
+                      />
+                    </td>
+                    <td>
+                      <select
+                        class="form-select text-muted"
+                        formControlName="companyId"
+                        id="companyId_{{ i }}"
+                      >
+                        <option [value]="null" disabled>Select Company</option>
+                        <option
+                          *ngFor="let company of companies"
+                          [value]="company.id"
+                        >
+                          {{ company.companyName }}
+                        </option>
+                      </select>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger"
+                        (click)="removeCompany(i)"
+                      >
+                        <i class="bi bi-trash"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        (click)="
+                          addCompany({
+                            id: 0,
+                            userId: editingUserId || 0,
+                            companyId: null
+                          })
+                        "
+                      >
+                        <i class="bi bi-plus-square"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- Card Ended -->
+      </div>
+      <!-- Select Company Ended -->
+    </div>
+  </form>
+</div>
